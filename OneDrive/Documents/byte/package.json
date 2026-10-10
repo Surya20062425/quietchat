@@ -1,0 +1,31 @@
+{
+  "name": "quietchat",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Open-source end-to-end encrypted ephemeral chat — server relays ciphertext only",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm test --workspaces --if-present",
+    "lint": "eslint .",
+    "dev:relay": "npm run dev -w @quietchat/relay",
+    "dev:web": "npm run dev -w @quietchat/web",
+    "e2e": "node scripts/e2e-relay.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "eslint": "^9.39.0",
+    "globals": "^16.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0"
+  }
+}
