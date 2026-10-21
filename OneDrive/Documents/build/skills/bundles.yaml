@@ -1,0 +1,6 @@
+# Skill bundles: one alias -> several skill IDs.
+# Invoke the alias with /alias to load every listed skill at once,
+# e.g. `/ship` loads code-review + commit-msg + debugging.
+ship:
+  - code-review
+  - commit-msg

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "void-cli"
+version = "0.1.0"
+description = "A self-contained AI agent terminal harness — direct model integration, no gateway"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "prompt_toolkit>=3.0.40",
+    "rich>=13.0.0",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=1.30.0"]
+anthropic = ["anthropic>=0.30.0"]
+gemini = ["google-generativeai>=0.8.0"]
+
+[project.scripts]
+void = "void.main:main"
+
+[tool.setuptools]
+packages = ["void", "void.agent", "void.providers", "void.tools"]
+
+[tool.setuptools.package-data]
+void = ["../skills/*.md", "../skills/bundles.yaml"]

@@ -1,0 +1,27 @@
+# --- void -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# local secrets + runtime state (never commit: ~/.void/.env lives outside the repo,
+# but keep the pattern in case someone points VOID_HOME here)
+.env
+*.db
+*.db-wal
+*.db-shm
+.void/
+.void-worktrees/
+
+# skills the user installs (bundled skills/ ARE committed)
+skills/user/
+
+# throwaway files from local testing
+_smoke_*.py
+_*.txt

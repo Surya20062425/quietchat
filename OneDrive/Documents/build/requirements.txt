@@ -1,0 +1,20 @@
+# void runtime dependencies.
+# Everything else is stdlib (sqlite3 + fts5, urllib, ast, threading, http.server).
+
+# REPL: multiline input, history, autocomplete, status bar
+prompt_toolkit>=3.0.40
+
+# Pretty console output (Markdown rendering in the REPL)
+rich>=13.0.0
+
+# config.yaml / skills frontmatter
+PyYAML>=6.0
+
+# Provider SDKs — install only the ones you use, or run `void doctor --fix`.
+# OpenRouter and any "custom" OpenAI-compatible endpoint use the openai SDK.
+openai>=1.30.0
+anthropic>=0.30.0
+google-generativeai>=0.8.0
+
+# Optional: a keyless web_search works without it (DuckDuckGo fallback),
+# but BRAVE_API_KEY gives much better results.

@@ -11,3 +11,4 @@ A collection of learning resources and project prototypes.
 | [orca-platform/](orca-platform/) | ORCA — agentic AI marine ecosystem reasoning platform (SIH 2026, ISRO) |
 | [llm-analytics-guide.md](llm-analytics-guide.md) | Guide to building/fine-tuning LLMs for free in the cloud |
 | [tokenization-knowledge/](tokenization-knowledge/) | Notes on LLM tokenization for low-resource languages |
+| [OneDrive/Documents/build/](OneDrive/Documents/build/) | `void` — self-contained AI agent terminal harness |
